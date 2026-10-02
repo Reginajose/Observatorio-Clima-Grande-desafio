@@ -1,0 +1,148 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "mount_file_id": "1yOyfbM9iEcX-UOFE0nP6Wwi-0GBNGF9x",
+      "authorship_tag": "ABX9TyP1dEBcwCJYn7i4oikbnhKK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Reginajose/Observatorio-Clima-Grande-desafio/blob/main/Transformacao-Filtros\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Transformação dos Dados e Análises Estatísticas**\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "PcIDVSBQ2mDc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "TFa3eM85DBDk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np\n",
+        "\n",
+        "# Criando sub dataset´s para não estragar os dados que ja foram tratados e cruzados.\n",
+        "\n",
+        "df_funil = dataset_mestre_observatorio.csv.copy()\n",
+        "\n",
+        "#Filtro 1\n",
+        "df-f1 = df_funil [df_funil[ 'participou_sinisa'] == True].copy ()\n",
+        "\n",
+        "#Filtro 2\n",
+        "df_f2 = df_f1[df_f1['qtd_domicilios_risco'] > 0]. copy ()\n",
+        "\n",
+        "#Filtro 3\n",
+        "df_f3  = df_f2[df_f2['capag'].isin(['C', 'D'])].copy ()\n",
+        "\n",
+        "#Filtro 4\n",
+        "df_f4 = df_f4[df_f3['mapeamento_area_risco']. nota()].copy()\n",
+        "\n",
+        "print(f\"Total Inicial: {len(df_funil)}\")\n",
+        "print(f\"Apos filtro SINISA: {len(df_f1)}\")\n",
+        "print(f\"Com Domicílios em Risco: {len(df_f2)}\")\n",
+        "print(\"Com CAPAG C/D: {len(df_f3)}\")\n",
+        "print(f\"Com Risco Mapeado (Universo ELegível): {len(df_f4)}\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "YyHI0QOf4WTV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**Ordenação e Construção do Raking - TOP 20**"
+      ],
+      "metadata": {
+        "id": "Lp0kO_AU-8gI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ordenando pelo príncipal de valor de impacto\n",
+        "# Aplicando Critérios de desempate\n",
+        "\n",
+        "df_ranking = df_f4.sort_values(\n",
+        "    dy=['qtd_domicilios_risco','total_desastres', 'soma_afetados'],\n",
+        "    ascending=[False, False, False]\n",
+        ").reset_index(drop=True)\n",
+        "\n",
+        "df_ranking.head(20)"
+      ],
+      "metadata": {
+        "id": "xZVG4kEK-7AH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Adicionando uma coluna de posição.\n",
+        "df = ranking['posicao'] = df_ranking.index + 1\n",
+        "\n",
+        "df_ranking.head(20)"
+      ],
+      "metadata": {
+        "id": "aeim0eHJAe2t"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Seleção inicial dos 20 primeiros municipois a receberem o finaciamento do Carlos.\n",
+        "top_20 = df_ranking.head(20).copy()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "wi-DpCHbBfY6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Verificar a posibilidade da distribuição ser realizada em função do tamanho do município - Amostra Polulacional."
+      ],
+      "metadata": {
+        "id": "IpDTuzjUCRQB"
+      }
+    }
+  ]
+}
