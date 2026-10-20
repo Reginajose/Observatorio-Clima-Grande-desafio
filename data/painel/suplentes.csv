@@ -4,3 +4,296 @@ posicao,municipio,uf,moradias_em_risco,parte_da_cidade_em_risco_pct
 23,Itabuna,BA,7832,8.2
 24,Paraty,RJ,6500,30.1
 25,Imperatriz,MA,6000,5.5
+26,Carangola,MG,6000,43.5
+27,Laranjal do Jari,AP,6000,45.0
+28,Nova Lima,MG,5600,11.0
+29,Gravataí,RS,5500,4.6
+30,Guarujá,SP,5500,3.4
+31,Santa Maria,RS,5200,3.9
+32,São João Batista,SC,5000,38.4
+33,Nova Friburgo,RJ,5000,5.4
+34,Sapucaia do Sul,RS,5000,8.5
+35,São Fidélis,RJ,5000,29.8
+36,Teresópolis,RJ,5000,6.0
+37,Peruíbe,SP,5000,9.5
+38,Olinda,PE,5000,3.1
+39,Caruaru,PE,4872,2.8
+40,Rolante,RS,4350,52.8
+41,Cruzeiro do Sul,AC,4000,15.6
+42,União da Vitória,PR,4000,17.7
+43,Nova Viçosa,BA,4000,19.9
+44,Mimoso do Sul,ES,3850,49.0
+45,Feira de Santana,BA,3594,1.3
+46,Pedreiras,MA,3500,28.1
+47,Conde,BA,3500,44.4
+48,Machado,MG,3478,24.4
+49,Itaperuna,RJ,3447,7.1
+50,Porciúncula,RJ,3200,46.7
+51,Vitória do Jari,AP,3119,92.6
+52,São Sebastião,SP,3038,5.6
+53,Almenara,MG,3000,18.9
+54,Visconde do Rio Branco,MG,3000,18.2
+55,Alegrete,RS,2995,9.4
+56,Brasiléia,AC,2761,36.6
+57,Itabirito,MG,2668,10.8
+58,Aracaju,SE,2504,0.9
+59,São Sebastião do Caí,RS,2500,25.0
+60,Itaquaquecetuba,SP,2500,1.8
+61,São Luís do Quitunde,AL,2400,28.6
+62,Rio Pardo,RS,2279,17.6
+63,Presidente Getúlio,SC,2131,32.2
+64,Ponte Nova,MG,2051,8.4
+65,Cardoso Moreira,RJ,2000,41.7
+66,Careiro,AM,2000,35.6
+67,Jaguaquara,BA,2000,11.3
+68,Matriz de Camaragibe,AL,2000,24.6
+69,Água Preta,PE,2000,24.9
+70,Lábrea,AM,2000,22.3
+71,Atalaia,AL,2000,18.6
+72,Marília,SP,2000,1.8
+73,Sorocaba,SP,1821,0.6
+74,Murici,AL,1700,19.1
+75,União dos Palmares,AL,1700,7.9
+76,Bom Jesus do Itabapoana,RJ,1550,9.7
+77,Três Corações,MG,1500,4.9
+78,Itapema,SC,1500,2.8
+79,Catende,PE,1500,13.1
+80,Ipixuna,AM,1500,40.4
+81,Santa Maria das Barreiras,PA,1500,38.8
+82,Eunápolis,BA,1500,3.0
+83,Gurupá,PA,1500,37.0
+84,Taboão da Serra,SP,1500,1.3
+85,Itapetinga,BA,1470,5.1
+86,Canutama,AM,1400,42.0
+87,Alfredo Chaves,ES,1300,32.2
+88,Abaetetuba,PA,1300,3.7
+89,Miguel Pereira,RJ,1300,9.5
+90,Caracaraí,RR,1286,28.0
+91,São Lourenço do Sul,RS,1250,9.7
+92,Canelinha,SC,1200,27.0
+93,Itapipoca,CE,1200,3.6
+94,Penedo,AL,1197,5.8
+95,Barra Mansa,RJ,1144,1.4
+96,Rio Formoso,PE,1115,19.2
+97,Santa Isabel,SP,1100,5.2
+98,Santa Cruz do Sul,RS,1033,1.8
+99,Catu,BA,1000,4.9
+100,Arroio do Meio,RS,1000,12.1
+101,Carauari,AM,1000,14.2
+102,Santana do Mundaú,AL,1000,31.2
+103,São Bento do Una,PE,1000,7.0
+104,Santo Amaro,BA,993,4.4
+105,Jacareacanga,PA,970,25.0
+106,Taquari,RS,950,8.7
+107,Arame,MA,911,21.8
+108,Candelária,RS,905,10.8
+109,Nazaré da Mata,PE,880,7.2
+110,São Carlos,SP,850,0.7
+111,Pau Brasil,BA,800,24.3
+112,Pirapora,MG,800,3.4
+113,Caraí,MG,800,15.9
+114,Itagi,BA,800,16.9
+115,Aparecida,SP,788,6.0
+116,Moreno,PE,740,3.3
+117,Marechal Floriano,ES,736,14.9
+118,Envira,AM,727,18.3
+119,Poá,SP,714,1.7
+120,Ibitirama,ES,700,30.0
+121,Santo Antônio do Içá,AM,700,13.4
+122,Caapiranga,AM,700,39.9
+123,Pacatuba,CE,670,2.0
+124,Nova Olinda do Norte,AM,650,11.9
+125,Pirapetinga,MG,644,13.3
+126,São Francisco,MG,642,4.1
+127,Carlos Chagas,MG,629,9.8
+128,Aperibé,RJ,626,12.4
+129,Balneário Gaivota,SC,618,5.2
+130,Santo Amaro da Imperatriz,SC,603,5.1
+131,Barbacena,MG,600,1.1
+132,Guapimirim,RJ,600,2.3
+133,Correia Pinto,SC,600,9.8
+134,Anamã,AM,600,42.0
+135,Porto de Moz,PA,580,10.0
+136,João Monlevade,MG,545,1.6
+137,Monte Alegre,PA,544,3.8
+138,Colônia Leopoldina,AL,530,9.5
+139,Aveiro,PA,520,30.8
+140,Antonina,PR,515,6.1
+141,Jordão,AC,512,41.0
+142,Armazém,SC,510,19.3
+143,Canguaretama,RN,500,4.4
+144,Macaíba,RN,500,1.6
+145,Lontras,SC,500,11.3
+146,Goiabeira,MG,500,35.8
+147,São Miguel dos Campos,AL,500,2.6
+148,Maragogipe,BA,496,4.6
+149,Borba,AM,490,7.1
+150,Barra de Santo Antônio,AL,488,6.5
+151,Ubaíra,BA,483,10.0
+152,Cachoeira Paulista,SP,482,3.5
+153,Rio Claro,SP,480,0.5
+154,Irupi,ES,474,16.4
+155,Laje do Muriaé,RJ,454,15.4
+156,Jerônimo Monteiro,ES,452,9.9
+157,Tabuleiro do Norte,CE,440,4.2
+158,Franco da Rocha,SP,424,0.7
+159,Riacho das Almas,PE,420,6.9
+160,Dores de Guanhães,MG,412,43.8
+161,Paulo Jacinto,AL,405,17.1
+162,Jaguari,RS,401,12.3
+163,Uruguaiana,RS,400,0.9
+164,Caçador,SC,400,1.4
+165,Patos de Minas,MG,400,0.5
+166,Formiga,MG,400,1.2
+167,Viçosa,AL,400,5.1
+168,Manhumirim,MG,386,4.8
+169,Águas de Chapecó,SC,380,21.7
+170,Alto Alegre do Pindaré,MA,364,6.5
+171,Bragança,PA,359,1.1
+172,Feijó,AC,350,5.2
+173,Bom Jesus do Tocantins,PA,350,9.9
+174,Taparuba,MG,350,26.0
+175,Guidoval,MG,320,11.2
+176,Rio Bonito,RJ,302,1.3
+177,Óbidos,PA,300,2.4
+178,Rurópolis,PA,300,4.0
+179,Paracambi,RJ,300,1.6
+180,Rio Preto,MG,300,11.9
+181,Diadema,SP,300,0.2
+182,Xapuri,AC,300,6.2
+183,Campinas,SP,300,0.1
+184,Ewbank da Câmara,MG,300,16.4
+185,São José do Rio Pardo,SP,300,1.4
+186,Santa Maria Madalena,RJ,260,6.4
+187,Cataguases,MG,255,0.8
+188,Pocrane,MG,255,8.3
+189,Águas Mornas,SC,250,12.1
+190,Mutum,MG,250,3.2
+191,Socorro,SP,250,1.9
+192,Ubaporanga,MG,250,8.0
+193,Matias Cardoso,MG,250,10.5
+194,Águas Formosas,MG,240,3.6
+195,Marechal Thaumaturgo,AC,240,11.6
+196,Alfredo Wagner,SC,236,10.1
+197,Itupiranga,PA,230,2.1
+198,Anori,AM,230,6.9
+199,Pilar,AL,221,1.5
+200,Monção,MA,220,4.9
+201,Santa Bárbara D Oeste,SP,215,0.3
+202,Eugenópolis,MG,205,4.6
+203,Nova Ipixuna,PA,205,6.5
+204,Coroaci,MG,204,8.1
+205,Magé,RJ,203,0.2
+206,Muniz Freire,ES,200,4.1
+207,Jaguarão,RS,200,1.6
+208,Coqueiro Seco,AL,200,9.8
+209,Jequiá da Praia,AL,200,10.6
+210,Cuiabá,MT,200,0.1
+211,Santana do Livramento,RS,200,0.6
+212,Nina Rodrigues,MA,200,13.1
+213,Canhotinho,PE,200,2.7
+214,Ituberá,BA,200,2.2
+215,Atílio Vivácqua,ES,200,5.8
+216,Pederneiras,SP,188,1.0
+217,São Félix do Xingu,PA,185,1.2
+218,Mesquita,RJ,180,0.2
+219,Timbaúba,PE,175,1.0
+220,São Pedro do Suaçuí,MG,167,12.6
+221,Sarzedo,MG,166,1.0
+222,São Lourenço da Mata,PE,163,0.3
+223,Pedro Osório,RS,160,4.3
+224,Praia Grande,SC,158,5.4
+225,Patrocínio do Muriaé,MG,157,6.2
+226,Vitória do Xingu,PA,150,3.8
+227,Manacapuru,AM,150,0.6
+228,Sete Lagoas,MG,150,0.2
+229,São Joaquim,SC,150,1.7
+230,Japeri,RJ,150,0.4
+231,Satuba,AL,150,1.6
+232,Ribeirão das Neves,MG,150,0.1
+233,Guiricema,MG,148,6.0
+234,Bituruna,PR,145,3.4
+235,Goiás,GO,137,1.3
+236,Rafard,SP,130,4.0
+237,Belo Oriente,MG,130,1.5
+238,Franciscópolis,MG,120,9.9
+239,Resplendor,MG,120,1.8
+240,Embu-Guaçu,SP,120,0.4
+241,São João da Boa Vista,SP,115,0.3
+242,Itapitanga,BA,110,4.1
+243,Passo de Camaragibe,AL,100,2.4
+244,Itapicuru,BA,100,1.4
+245,Cortês,PE,100,2.8
+246,Ceará-Mirim,RN,100,0.4
+247,São José de Ribamar,MA,100,0.1
+248,Aurora,SC,99,7.5
+249,São José do Cerrito,SC,98,6.4
+250,Itacaré,BA,94,1.0
+251,Carapebus,RJ,94,1.6
+252,Santa Tereza,RS,90,24.7
+253,Ibicuí,BA,86,1.4
+254,Nioaque,MS,83,2.3
+255,Cordeiro,RJ,82,0.8
+256,Padre Paraíso,MG,80,1.5
+257,Monte Mor,SP,80,0.3
+258,Limoeiro de Anadia,AL,80,2.2
+259,Colniza,MT,75,1.0
+260,Cunha,SP,75,1.0
+261,Canaã,MG,75,6.8
+262,Descoberto,MG,72,3.2
+263,Frei Inocêncio,MG,66,2.1
+264,Otacílio Costa,SC,60,0.9
+265,Caparaó,MG,52,4.3
+266,Rio Branco do Sul,PR,52,0.4
+267,Vargem,SC,50,9.6
+268,Rio Preto da Eva,AM,50,0.7
+269,Ipiaú,BA,50,0.3
+270,Rubelita,MG,50,2.6
+271,Pescador,MG,50,3.5
+272,Varre-Sai,RJ,50,1.6
+273,Avaré,SP,50,0.1
+274,São Luís do Paraitinga,SP,50,1.4
+275,Novo Airão,AM,50,1.2
+276,Chácara,MG,50,2.6
+277,Pedro Leopoldo,MG,47,0.2
+278,Aiquara,BA,46,3.8
+279,Imaruí,SC,45,1.8
+280,Macuco,RJ,40,1.9
+281,Ermo,SC,40,7.5
+282,Pedra Branca do Amapari,AP,40,1.1
+283,Bom Jardim da Serra,SC,35,2.9
+284,Ouro Verde de Minas,MG,30,1.8
+285,Itagimirim,BA,30,1.2
+286,Santa Rita do Pardo,MS,30,1.4
+287,Caiana,MG,29,2.0
+288,Mendes,RJ,27,0.3
+289,Anita Garibaldi,SC,26,1.0
+290,Formosa,GO,26,0.0
+291,Lins,SP,25,0.1
+292,Santa Maria da Vitória,BA,20,0.2
+293,Arinos,MG,20,0.4
+294,Cipotânea,MG,20,1.0
+295,Materlândia,MG,20,2.2
+296,Porto Lucena,RS,20,1.6
+297,Trajano de Moraes,RJ,20,0.6
+298,Limeira,SP,20,0.0
+299,Caeté,MG,20,0.1
+300,Barra de São Francisco,ES,18,0.1
+301,Itueta,MG,17,0.9
+302,Pouso Redondo,SC,15,0.3
+303,Jacundá,PA,15,0.1
+304,Ribeira,SP,15,1.6
+305,Mataraca,PB,15,0.5
+306,Juruá,AM,13,0.6
+307,Macaparana,PE,11,0.2
+308,Bocaina do Sul,SC,10,1.4
+309,Santa Luzia,BA,10,0.3
+310,Quebrangulo,AL,10,0.3
+311,Raposa,MA,10,0.1
+312,Senhora de Oliveira,MG,10,0.5
+313,Araraquara,SP,10,0.0
+314,Guariba,SP,8,0.0
+315,Fernando Prestes,SP,5,0.2
+316,Benjamin Constant,AM,4,0.0
+317,Mairiporã,SP,4,0.0
+318,Perdigão,MG,3,0.0
