@@ -1,0 +1,10 @@
+# Bibliotecas usadas nos notebooks (no Google Colab quase todas já vêm instaladas).
+# Para rodar fora do Colab: pip install -r requirements.txt
+pandas
+numpy
+openpyxl
+pypdf
+matplotlib
+adjustText
+plotly
+reportlab
