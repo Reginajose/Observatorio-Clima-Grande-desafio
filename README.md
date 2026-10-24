@@ -66,7 +66,7 @@ Também foi estudada uma classificação alternativa que combina **70% da quanti
 - Relação ordenada dos demais municípios elegíveis como suplentes.
 - Arquivos estruturados para alimentar o painel no Looker Studio.
 - Comparação entre o ranking principal e uma alternativa de priorização.
-- Dicionário de dados e documentação das regras e limitações adotadas.
+- Dicionário de dados ([`docs/DICIONARIO_DE_DADOS.md`](docs/DICIONARIO_DE_DADOS.md)) e registro das transformações de cada etapa ([`docs/LOG_TRANSFORMACOES.md`](docs/LOG_TRANSFORMACOES.md)), com as regras e limitações adotadas.
 
 Os arquivos derivados estão organizados em [`data/painel/`](data/painel/).
 
@@ -74,18 +74,24 @@ Os arquivos derivados estão organizados em [`data/painel/`](data/painel/).
 |---|---|
 | `painel_top20.csv` | Dados dos 20 municípios priorizados |
 | `painel_funil.csv` | Etapas do processo de elegibilidade |
-| `painel_dentro_fora.csv` | Comparação entre municípios elegíveis e não elegíveis |
+| `painel_dentro_fora.csv` | Comparação entre os 20 municípios priorizados e os 298 elegíveis que ficam de fora |
 | `suplentes.csv` | Demais 298 municípios elegíveis, ordenados após a seleção principal |
 | `ranking_318.csv` | Posições no ranking principal e na classificação alternativa |
 | `alternativa_C_top20.csv`, `trocas_A_C.csv`, `comparacao_A_C.csv` | Resultados da análise de sensibilidade |
 
-## Notebook consolidado
+## Como reproduzir
 
-O notebook consolidado reúne o fluxo de trabalho em um único arquivo, facilitando a leitura das etapas e a reprodução da análise:
+O fluxo completo está em **um único notebook**, que refaz a análise desde os arquivos brutos e gera os arquivos do painel:
 
-**[Abrir Observatorio_Clima_Notebook_Unico_merge.ipynb](Observatorio_Clima_Notebook_Unico_merge.ipynb)**
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Reginajose/Observatorio-Clima-Grande-desafio/blob/main/notebooks/Observatorio_Clima_Pipeline_Completo.ipynb)
 
-Os notebooks das etapas anteriores e os materiais de validação permanecem no repositório como documentação complementar do desenvolvimento.
+**[notebooks/Observatorio_Clima_Pipeline_Completo.ipynb](notebooks/Observatorio_Clima_Pipeline_Completo.ipynb)**
+
+- **Executar tudo** baixa do Google Drive os arquivos brutos (SINISA, CAPAG e Atlas) e refaz o tratamento, o cruzamento e o painel. Exige acesso aos arquivos no Drive e uma autorização na primeira execução.
+- Para rodar **só a partir dos CSVs tratados** de [`data/`](data/), sem Drive, defina `PIPELINE_COMPLETA = False` na seção 0.2 do notebook.
+- Ao final, a seção 2.1 compara os arquivos gerados com os versionados em `data/`.
+
+As mesmas etapas também estão separadas em notebooks individuais, na ordem do pipeline, em [`notebooks/etapas/`](notebooks/etapas/). As fases anteriores e os materiais de validação ficam em [`notebooks/historico/`](notebooks/historico/), e as versões substituídas em [`notebooks/antigos/`](notebooks/antigos/).
 
 ## Tecnologias e competências aplicadas
 
@@ -107,11 +113,28 @@ Os notebooks das etapas anteriores e os materiais de validação permanecem no r
 
 ## Estrutura do repositório
 
-- `data/` — bases tratadas, base mestre e arquivos de saída.
-- `data/painel/` — arquivos preparados para visualização e comparação de cenários.
-- `Notebook/` — notebooks das etapas de tratamento, integração, análise e painel.
-- `docs/` — documentação complementar, incluindo o dicionário de dados.
-- `Observatorio_Clima_Notebook_Unico_merge.ipynb` — notebook consolidado do projeto.
+```text
+.
+├── README.md
+├── requirements.txt                 bibliotecas Python usadas nos notebooks
+├── LICENSE
+├── data/                            bases tratadas, base mestre e arquivos de saída
+│   └── painel/                      arquivos para o Looker Studio e comparação de cenários
+├── docs/
+│   ├── DICIONARIO_DE_DADOS.md       descrição das colunas da base mestre
+│   └── LOG_TRANSFORMACOES.md        transformações aplicadas em cada etapa
+└── notebooks/
+    ├── Observatorio_Clima_Pipeline_Completo.ipynb   notebook principal (pipeline completo)
+    ├── etapas/                      as etapas do pipeline, uma por notebook
+    │   ├── 01_ETL_SINISA.ipynb
+    │   ├── 02_Tratamento_CAPAG.ipynb
+    │   ├── 03_Exploracao_Atlas_S2iD.ipynb
+    │   ├── 04_Cruzamento_Bases.ipynb
+    │   ├── 05_Painel_Final.ipynb
+    │   └── 06_Grafico_Verba_vs_Danos.ipynb
+    ├── historico/                   fases anteriores e validação (consulta)
+    └── antigos/                     versões substituídas
+```
 
 ---
 
