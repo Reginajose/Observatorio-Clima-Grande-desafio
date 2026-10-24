@@ -62,7 +62,7 @@ Também foi estudada uma classificação alternativa que combina **70% da quanti
 
 - Base mestre nacional com **5.570 municípios**.
 - Funil de elegibilidade com **318 municípios**.
-- Ranking principal e seleção dos **20 municípios prioritários**.
+- Painel no Looker Studio com ranking principal e seleção dos **20 municípios prioritários**. https://datastudio.google.com/reporting/af3bf21c-7560-4a66-8694-2d5a18ec74bb
 - Relação ordenada dos demais municípios elegíveis como suplentes.
 - Arquivos estruturados para alimentar o painel no Looker Studio.
 - Comparação entre o ranking principal e uma alternativa de priorização.
