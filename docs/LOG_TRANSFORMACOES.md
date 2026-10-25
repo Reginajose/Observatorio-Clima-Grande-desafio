@@ -2,7 +2,9 @@
 
 Cada etapa do pipeline, na ordem em que roda: o que entra, o que é feito e quantas linhas sobram. Os números abaixo foram conferidos rodando os notebooks do repositório a partir dos arquivos brutos oficiais (21/10/2026). O resultado bate com os arquivos de `data/`: idêntico no SINISA e na CAPAG, e com diferença máxima de R$ 0,02 nos valores em reais do Atlas (arredondamento de ponto flutuante).
 
-## 1. SINISA 2024: `Notebook/ETL_SINISA.ipynb`
+Todas as etapas abaixo rodam em sequência no notebook principal, `notebooks/Observatorio_Clima_Pipeline_Completo.ipynb` (partes 1.1 a 3). Os notebooks de cada etapa, citados em cada seção, ficam em `notebooks/etapas/`.
+
+## 1. SINISA 2024: `notebooks/etapas/01_ETL_SINISA.ipynb`
 
 **Entrada (bruto, Ministério das Cidades):** `SINISA_AGUASPLUVIAIS_Informacoes_Formularios_Tecnicos.xlsx`, `SINISA_AGUASPLUVIAIS_Indicadores_AP2024.xlsx` e `GLOSSARIO_INFORMACOES_SINISA_AGUASPLUVIAIS.pdf`
 **Saída:** `data/sinisa_limpo.csv` (5.570 linhas, 9 colunas)
@@ -20,7 +22,7 @@ Cada etapa do pipeline, na ordem em que roda: o que entra, o que é feito e quan
 
 Observação registrada: 2.607 municípios declaram zero domicílios em risco; zero costuma significar "não mapeou", não "sem risco".
 
-## 2. CAPAG: `Notebook/Tratamento_CAPAG.ipynb`
+## 2. CAPAG: `notebooks/etapas/02_Tratamento_CAPAG.ipynb`
 
 **Entrada (bruto, Tesouro Nacional):** `capag-municipios-posicao-2026-set.xlsx`, aba "CAPAG Ano Base 2025" (prévia). O notebook baixa o arquivo direto do Drive da célula.
 **Saída:** `data/capag_nacional_tratada.csv` (5.567 linhas, 9 colunas)
@@ -32,7 +34,7 @@ Observação registrada: 2.607 municípios declaram zero domicílios em risco; z
 | 2.3 | Seleciona 6 colunas; confere nulos (0), duplicados (0) e código IBGE de 7 dígitos (todos válidos) | 5.567 |
 | 2.4 | Cria `criterio_capag_cd` (C ou D: 2.294), `sem_nota_capag` (n.d. ou n.e.: 596) e `criterio_fiscal_priorizacao` (sem nota A ou B: 2.890) | 5.567 |
 
-## 3. Atlas Digital de Desastres: `Notebook/Cópia_de_Exploração_Atlas_S2iD.ipynb`
+## 3. Atlas Digital de Desastres: `notebooks/etapas/03_Exploracao_Atlas_S2iD.ipynb`
 
 **Entrada (bruto, MIDR):** `BD_Atlas_1991_2025_v1.1_2026.08.06_Consolidado.xlsx`, aba **"Atlas Valores Corrigidos"**, exportada como `atlas_geral.csv` (separador `;`, datas no formato dd/mm/aaaa)
 **Saída:** `data/S2iD_Desastres_Hidrologicos_Selecao_Auditada.csv` (9.890 linhas, 17 colunas)
@@ -49,7 +51,7 @@ Observação registrada: 2.607 municípios declaram zero domicílios em risco; z
 
 Distribuição por ano: 2021: 1.334 · 2022: 2.777 · 2023: 2.361 · 2024: 1.739 · 2025: 1.679. Status: 4.635 reconhecidos e 5.255 só registrados (os dois entram).
 
-## 4. Cruzamento: `Notebook/Cruzamento_Bases_Observatorio.ipynb`
+## 4. Cruzamento: `notebooks/etapas/04_Cruzamento_Bases.ipynb`
 
 **Entrada:** as três saídas acima
 **Saída:** `data/dataset_mestre_observatorio.csv` (5.570 linhas, 20 colunas)
@@ -63,7 +65,7 @@ Distribuição por ano: 2021: 1.334 · 2022: 2.777 · 2023: 2.361 · 2024: 1.739
 | 4.5 | Junção à esquerda com o Atlas agrupado; município sem registro recebe 0 (2.459) | 5.570 |
 | 4.6 | Cria `tem_registro_atlas` (3.111) e `tem_dano_atlas` (danos + prejuízo > 0: 2.702) | 5.570 |
 
-## 5. Funil, ordem e valores: `Notebook/Painel_Final.ipynb`
+## 5. Funil, ordem e valores: `notebooks/etapas/05_Painel_Final.ipynb`
 
 **Entrada:** `data/dataset_mestre_observatorio.csv`
 **Saída:** `data/painel/` (8 arquivos)

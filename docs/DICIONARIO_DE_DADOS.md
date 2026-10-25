@@ -2,7 +2,7 @@
 
 ## `data/dataset_mestre_observatorio.csv`
 
-Uma linha por município (5.570, todos os do SINISA). Chave: `Cod_IBGE_7`. Gerado por `Notebook/Cruzamento_Bases_Observatorio.ipynb`.
+Uma linha por município (5.570, todos os do SINISA). Chave: `Cod_IBGE_7`. Gerado por `notebooks/etapas/04_Cruzamento_Bases.ipynb` (parte 2 do notebook principal, `notebooks/Observatorio_Clima_Pipeline_Completo.ipynb`).
 
 | # | Coluna | Tipo | O que é | Fonte | Tratamento | Valores |
 |---|---|---|---|---|---|---|
